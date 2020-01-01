@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "33289205623",
+    "firebase_url": "https://storesafe-ed86a.firebaseio.com",
+    "project_id": "storesafe-ed86a",
+    "storage_bucket": "storesafe-ed86a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33289205623:android:864fefdb25b42880001372",
+        "android_client_info": {
+          "package_name": "com.core.storesafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33289205623-q3irbt912kbmdgjo5p139n7qkdqo3h9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjeMckqMlhgKPimgnsYOlfck89ZTYYFVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33289205623-q3irbt912kbmdgjo5p139n7qkdqo3h9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

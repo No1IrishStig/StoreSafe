@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+        <!-- Customize your theme here. -->
+
+    <style name="Custom_ToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background"> @color/Menu_Bar</item>
+        <item name="android:textColor"> #000</item>
+        <item name="android:textColorSecondary">@color/White</item>
+    </style>
+
+    <style name="Custom_PopupStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/BG_Main</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+    </style>
+
+
+
+</resources>
