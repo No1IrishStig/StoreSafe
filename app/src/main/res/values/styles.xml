@@ -16,6 +16,13 @@
         <item name="android:dropDownVerticalOffset">0dp</item>
     </style>
 
+    <style name="BottomNavigationView.Active" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+    </style>
 
 
 </resources>

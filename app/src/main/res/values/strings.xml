@@ -20,6 +20,14 @@
     <string name="ReEnter">"Re-Enter Password"</string>
     <string name="Home">"Go back"</string>
     <string name="Reset">"Reset Password"</string>
+    <string name="Generate">"Generate"</string>
+    <string name="Copy">"Copy"</string>
+    <string name="PWordLength">"Password Length:  0</string>
+    <string name="Vault">"Vault"</string>
+
+    <string name="Characters">"Characters"</string>
+    <string name="Numbers">"Numbers"</string>
+    <string name="Both">"Both"</string>
 
     <!-- Menu Bar -->
 

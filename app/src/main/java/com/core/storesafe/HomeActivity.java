@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -49,6 +50,20 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId())
+        {
+            case R.id.action_vault:
+                Intent vault = new Intent(this, HomeActivity.class);
+                startActivity(vault);
+                break;
+            case R.id.action_generate:
+                Intent generate = new Intent(this, GenerateActivity.class);
+                startActivity(generate);
+                break;
+            case R.id.action_settings:
+                // Nothing
+                break;
+        }
         return super.onOptionsItemSelected(item);
     }
 }

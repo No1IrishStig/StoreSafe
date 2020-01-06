@@ -13,9 +13,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class ForgottenActivity extends AppCompatActivity {
     FirebaseAuth mFirebaseAuth;
@@ -32,7 +30,7 @@ public class ForgottenActivity extends AppCompatActivity {
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         emailId = findViewById(R.id.email);
-        btnReset = findViewById(R.id.reset);
+        btnReset = findViewById(R.id.Generate);
         btnBack = findViewById(R.id.back);
 
         btnReset.setOnClickListener(new View.OnClickListener(){

@@ -9,4 +9,5 @@
     <color name="BG_Main">#FAFAFA</color>
     <color name="White">#FFF</color>
     <color name="MenuText">#000</color>
+    <color name="NavBar">#828282</color>
 </resources>
