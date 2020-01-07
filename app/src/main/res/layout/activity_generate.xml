@@ -78,7 +78,9 @@
         android:layout_marginEnd="55dp"
         android:layout_marginBottom="524dp"
         android:clickable="false"
+        android:editable="false"
         android:ems="10"
+        android:enabled="false"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,6 +96,7 @@
         android:layout_marginEnd="95dp"
         android:layout_marginBottom="475dp"
         android:max="32"
+        android:progress="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -109,10 +112,12 @@
         android:layout_marginTop="166dp"
         android:layout_marginEnd="59dp"
         android:layout_marginBottom="539dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -131,42 +136,41 @@
         app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
-            android:id="@+id/radioCharacters"
+            android:id="@+id/radioSCharacters"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/Characters"
+            android:text="@string/SCharacters"
             android:textColor="@color/NavBar"
             android:textSize="18sp"
             android:onClick="checkButton"/>
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
         <RadioButton
             android:id="@+id/radioNumbers"
-            android:layout_width="162dp"
+            android:layout_width="148dp"
             android:layout_height="wrap_content"
             android:text="@string/Numbers"
             android:textColor="@color/NavBar"
             android:textSize="18sp"
             android:onClick="checkButton"/>
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
         <RadioButton
-            android:id="@+id/radioBoth"
-            android:layout_width="148dp"
+            android:id="@+id/radioLetters"
+            android:layout_width="162dp"
             android:layout_height="wrap_content"
-            android:text="@string/Both"
+            android:text="@string/Letters"
             android:textColor="@color/NavBar"
             android:textSize="18sp"
             android:onClick="checkButton"/>
+
+        <RadioButton
+            android:id="@+id/radioAll"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="@string/All"
+            android:textColor="@color/NavBar"
+            android:textSize="18sp"
+            android:onClick="checkButton"
+            android:checked="true"/>
 
     </RadioGroup>
 
