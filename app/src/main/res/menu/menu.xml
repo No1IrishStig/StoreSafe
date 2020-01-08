@@ -11,9 +11,4 @@
         android:title="@string/Generate"
         app:showAsAction="never"
         />
-    <item
-        android:id="@+id/action_settings"
-        android:title="@string/Settings_name"
-        app:showAsAction="never"
-        />
 </menu>

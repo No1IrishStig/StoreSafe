@@ -1,17 +1,14 @@
 <resources>
     <string name="app_name">StoreSafe</string>
-    <!-- Strings related to login -->
 
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-
+    <!-- Register -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="prompt_reentry">Re-Enter</string>
     <string name="prompt_new_pass">New Password</string>
+    <!-- End -->
 
+    <!-- Login -->
     <string name="Login">login</string>
     <string name="Register">"Register"</string>
     <string name="Forgotten">"Forgotten"</string>
@@ -20,19 +17,38 @@
     <string name="ReEnter">"Re-Enter Password"</string>
     <string name="Home">"Go back"</string>
     <string name="Reset">"Reset Password"</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- End -->
+
+    <!-- Generate -->
     <string name="Generate">"Generate"</string>
     <string name="Copy">"Copy"</string>
     <string name="PWordLength">"Password Length:  0</string>
     <string name="Vault">"Vault"</string>
-
     <string name="SCharacters">"Special Characters"</string>
     <string name="Characters">"Characters"</string>
     <string name="Numbers">"Numbers"</string>
     <string name="Letters">"Letters"</string>
     <string name="All">"All"</string>
+    <!-- End -->
+
+
+    <!-- New Credentials -->
+    <string name="FindCreds">"Search"</string>
+    <string name="AddAccount">"New"</string>
+    <string name="Username">"Username"</string>
+    <string name="Password">"Password"</string>
+    <string name="Name">"Name"</string>
+    <string name="URL">"URL"</string>
+    <string name="Save">"Save"</string>
+    <string name="Cancel">"Cancel"</string>
+    <!-- End -->
+
+    <!-- Home -->
+    <string name="Signout">"Sign Out"</string>
+    <string name="AddPass">"Add Password"</string>
 
     <!-- Menu Bar -->
-
     <string name="Settings_name">"Settings"</string>
     <string name="title_activity_settings">Settings</string>
 
