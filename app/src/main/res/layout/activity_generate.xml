@@ -10,6 +10,10 @@
         android:id="@+id/app_bar"
         layout="@layout/app_bar" />
 
+    <include
+        android:id="@+id/navbar"
+        layout="@layout/activity_navbar" />
+
     <Button
         android:id="@+id/Generate"
         android:layout_width="300dp"

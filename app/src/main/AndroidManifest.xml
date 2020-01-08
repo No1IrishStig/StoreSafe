@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".navbar"></activity>
+        <activity android:name=".ViewSites_Activity"></activity>
         <activity android:name=".NewCredentialsHolder" />
         <activity
             android:name=".SettingsActivity"

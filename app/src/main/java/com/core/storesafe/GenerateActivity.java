@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,7 @@ import java.util.Random;
 
 public class GenerateActivity extends Activity {
 
+    Button btnVault, btnGenerate, btnSettings;
     RadioGroup radioGroup;
     RadioButton radioButton;
     TextView generatedPassword;
@@ -27,42 +29,6 @@ public class GenerateActivity extends Activity {
     String pass;
     CharSequence mode;
     private static final String Number = "1234567890";
-
-    public static String randomLetters(int length) {
-        char[] all = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
-        StringBuilder rstring = new StringBuilder(length);
-        Random random = new Random();
-        for (int i = 0; i < length; i++) {
-            char c = all[random.nextInt(all.length)];
-            rstring.append(c);
-        }
-        String output = rstring.toString();
-        return output;
-    }
-
-    public static String randomChars(int length) {
-        char[] all = "*&^%!$@#.".toCharArray();
-        StringBuilder rstring = new StringBuilder(length);
-        Random random = new Random();
-        for (int i = 0; i < length; i++) {
-            char c = all[random.nextInt(all.length)];
-            rstring.append(c);
-        }
-        String output = rstring.toString();
-        return output;
-    }
-
-    public static String randomNumbers(int length) {
-        char[] all = "123456789".toCharArray();
-        StringBuilder rstring = new StringBuilder(length);
-        Random random = new Random();
-        for (int i = 0; i < length; i++) {
-            char c = all[random.nextInt(all.length)];
-            rstring.append(c);
-        }
-        String output = rstring.toString();
-        return output;
-    }
 
     public static String randomString(int length, String mode) {
         char[] all = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789*&^%!$@#.".toCharArray();
@@ -80,7 +46,6 @@ public class GenerateActivity extends Activity {
         String output = rstring.toString();
         return output;
     }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -132,6 +97,34 @@ public class GenerateActivity extends Activity {
                 clipboard.setPrimaryClip(clip);
 
                 Toast.makeText(GenerateActivity.this, "Copied to clipboard", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnVault = findViewById(R.id.navVault);
+        btnGenerate = findViewById(R.id.navGenerate);
+        btnSettings = findViewById(R.id.navSettings);
+
+        btnVault.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent vault = new Intent(GenerateActivity.this, HomeActivity.class);
+                startActivity(vault);
+            }
+        });
+
+        btnGenerate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent generate = new Intent(GenerateActivity.this, GenerateActivity.class);
+                startActivity(generate);
+            }
+        });
+
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent settings = new Intent(GenerateActivity.this, SettingsActivity.class);
+                startActivity(settings);
             }
         });
     }

@@ -34,7 +34,6 @@
 
 
     <!-- New Credentials -->
-    <string name="FindCreds">"Search"</string>
     <string name="AddAccount">"New"</string>
     <string name="Username">"Username"</string>
     <string name="Password">"Password"</string>
@@ -44,9 +43,20 @@
     <string name="Cancel">"Cancel"</string>
     <!-- End -->
 
+    <!-- Search -->
+    <string name="FindCreds">"Search"</string>
+    <string name="HURL">"Website URL:"</string>
+    <string name="HName">"Website Name:"</string>
+    <string name="HUsername">"Username:"</string>
+    <string name="HPass">"Password:"</string>
+    <string name="HNotes">"Notes:"</string>
+
     <!-- Home -->
     <string name="Signout">"Sign Out"</string>
     <string name="AddPass">"Add Password"</string>
+
+    <!-- View Sites -->
+    <string name="viewSites">"All sites"</string>
 
     <!-- Menu Bar -->
     <string name="Settings_name">"Settings"</string>

@@ -6,12 +6,267 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <TextView
+        android:id="@+id/notes_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="655dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <include
         android:id="@+id/app_bar"
         layout="@layout/app_bar" />
 
     <include
         android:id="@+id/navbar"
-        layout="@layout/activity_navbar" />
+        layout="@layout/activity_navbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/dataView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="305dp"
+        android:layout_marginBottom="286dp"
+        android:text="@string/HURL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dataView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="511dp"
+        android:layout_marginEnd="291dp"
+        android:layout_marginBottom="239dp"
+        android:text="@string/HName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dataView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="606dp"
+        android:layout_marginEnd="322dp"
+        android:layout_marginBottom="144dp"
+        android:text="@string/HPass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dataView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="559dp"
+        android:layout_marginEnd="319dp"
+        android:layout_marginBottom="191dp"
+        android:text="@string/HUsername"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dataView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="655dp"
+        android:layout_marginEnd="346dp"
+        android:layout_marginBottom="95dp"
+        android:text="@string/HNotes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="178dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="422dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/url_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="286dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="511dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="239dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="559dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="191dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/password_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="606dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/copy_notes"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="647dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="86dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/copy_name"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="503dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="230dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/copy_username"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="551dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="182dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/copy_password"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="598dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="135dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/copy_url"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="278dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/searchedSitename"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="347dp"
+        android:ems="10"
+        android:hint="Site to find"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="299dp"
+        android:layout_marginTop="374dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="347dp"
+        android:text="@android:string/search_go"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

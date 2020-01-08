@@ -9,8 +9,9 @@
     <TextView
         android:id="@+id/navContainer"
         android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="676dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="680dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,84 +19,89 @@
 
     <TextView
         android:id="@+id/navVaultIcon"
-        android:layout_width="48dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="318dp"
-        android:background="@drawable/Safe"
-        app:layout_constraintBottom_toBottomOf="@+id/navContainer"
-        app:layout_constraintEnd_toEndOf="@+id/navContainer"
-        app:layout_constraintStart_toStartOf="@+id/navContainer"
-        app:layout_constraintTop_toTopOf="@+id/navContainer" />
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/safe"
+        app:layout_constraintBottom_toBottomOf="@+id/navVault"
+        app:layout_constraintEnd_toEndOf="@+id/navVault"
+        app:layout_constraintStart_toStartOf="@+id/navVault"
+        app:layout_constraintTop_toTopOf="@+id/navVault"
+        app:layout_constraintVertical_bias="0.47000003" />
 
     <TextView
         android:id="@+id/navGenerateIcon"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="178dp"
-        android:layout_marginEnd="178dp"
-        android:layout_marginBottom="1dp"
-        android:background="@drawable/Generate"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/generate"
         android:text=""
-        app:layout_constraintBottom_toBottomOf="@+id/navContainer"
-        app:layout_constraintEnd_toEndOf="@+id/navContainer"
-        app:layout_constraintStart_toStartOf="@+id/navContainer"
-        app:layout_constraintTop_toTopOf="@+id/navContainer" />
+        app:layout_constraintBottom_toBottomOf="@+id/navGenerate"
+        app:layout_constraintEnd_toEndOf="@+id/navGenerate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/navGenerate"
+        app:layout_constraintTop_toTopOf="@+id/navGenerate"
+        app:layout_constraintVertical_bias="0.42000002" />
 
     <TextView
         android:id="@+id/navCogIcon"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="316dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/Cog"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/cog"
         android:text=""
         app:layout_constraintBottom_toBottomOf="@+id/navContainer"
-        app:layout_constraintEnd_toEndOf="@+id/navContainer"
-        app:layout_constraintStart_toStartOf="@+id/navContainer"
-        app:layout_constraintTop_toTopOf="@+id/navContainer" />
+        app:layout_constraintEnd_toEndOf="@+id/navSettings"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/navSettings"
+        app:layout_constraintTop_toTopOf="@+id/navContainer"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/navVault"
-        android:layout_width="135dp"
-        android:layout_height="56dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="134dp"
+        android:layout_height="63dp"
         android:layout_marginEnd="272dp"
-        android:background="null"
-        android:style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="@+id/navContainer"
         app:layout_constraintEnd_toEndOf="@+id/navContainer"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/navContainer"
         app:layout_constraintTop_toTopOf="@+id/navContainer"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/navGenerate"
-        android:layout_width="140dp"
-        android:layout_height="55dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="142dp"
+        android:layout_height="63dp"
         android:layout_marginStart="135dp"
         android:layout_marginEnd="136dp"
-        android:layout_marginBottom="1dp"
-        android:background="null"
-        android:style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="@+id/navContainer"
         app:layout_constraintEnd_toEndOf="@+id/navContainer"
         app:layout_constraintStart_toStartOf="@+id/navContainer"
-        app:layout_constraintTop_toTopOf="@+id/navContainer" />
+        app:layout_constraintTop_toTopOf="@+id/navContainer"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/navSettings"
-        android:layout_width="136dp"
-        android:layout_height="55dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="134dp"
+        android:layout_height="63dp"
         android:layout_marginStart="275dp"
-        android:layout_marginTop="1dp"
-        android:background="null"
-        android:style="?android:attr/borderlessButtonStyle"
         app:layout_constraintBottom_toBottomOf="@+id/navContainer"
         app:layout_constraintEnd_toEndOf="@+id/navContainer"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/navContainer"
-        app:layout_constraintTop_toTopOf="@+id/navContainer" />
+        app:layout_constraintTop_toTopOf="@+id/navCogIcon"
+        app:layout_constraintVertical_bias="0.25" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

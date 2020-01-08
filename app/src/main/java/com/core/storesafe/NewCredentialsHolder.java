@@ -30,11 +30,10 @@ public class NewCredentialsHolder extends AppCompatActivity {
         private Button btnLogout, btnSendData, mSendData, btnCancel, btnExit;
         FirebaseAuth mFirebaseAuth;
         private FirebaseAuth.AuthStateListener mAuthStateListener;
-        private TextView mUserdataView;
         EditText URL, Sitename, Username, Password, Notes;
-
         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         String userid = currentFirebaseUser.getUid();
+
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +48,9 @@ public class NewCredentialsHolder extends AppCompatActivity {
             Password = findViewById(R.id.password);
             Notes = findViewById(R.id.notes);
 
-            // Send Data Button Function -----------------------------------------------------------------------------------------------------------------------------------
+            // Save Button Function -----------------------------------------------------------------------------------------------------------------------------------
 
-            mSendData = (Button) findViewById(R.id.save);
+            mSendData = findViewById(R.id.save);
             mSendData.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -66,38 +65,15 @@ public class NewCredentialsHolder extends AppCompatActivity {
                         databaseReference.child(userid).child("Websites").child(Sitename.getText().toString()).child("Username").setValue(Username.getText().toString());
                         databaseReference.child(userid).child("Websites").child(Sitename.getText().toString()).child("Password").setValue(Password.getText().toString());
                         databaseReference.child(userid).child("Websites").child(Sitename.getText().toString()).child("Notes").setValue(Notes.getText().toString());
+
+                        Toast.makeText(NewCredentialsHolder.this, "Your information has been stored successfully.", Toast.LENGTH_SHORT).show();
+                        Intent back = new Intent(NewCredentialsHolder.this, HomeActivity.class);
+                        startActivity(back);
                     }
                 }
             });
             // -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-            // -------------------------------------------------------------------------------------------------------------------------------------------------------------
-            /*btnSendData = findViewById(R.id.fetchData);
-            btnSendData.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    mUserdataView = findViewById(R.id.dataView);
-                    }
-             */
-            DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
-            DatabaseReference userRef = rootRef.child(userid).child("Websites");
-
-            userRef.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                    Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
-
-                    //mUserdataView.setText(map.toString());
-
-                    System.out.println(dataSnapshot.getChildren());
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                }
-            });
 
             btnCancel = findViewById(R.id.cancel);
             btnCancel.setOnClickListener(new View.OnClickListener() {
@@ -129,17 +105,15 @@ public class NewCredentialsHolder extends AppCompatActivity {
         public boolean onOptionsItemSelected(@NonNull MenuItem item) {
             switch(item.getItemId())
             {
-                case R.id.add_account:
-                    Intent vault = new Intent(this, NewCredentialsHolder.class);
+                case R.id.action_vault:
+                    Intent vault = new Intent(this, HomeActivity.class);
                     startActivity(vault);
                     break;
-                case R.id.find_credentials:
+                case R.id.action_generate:
                     Intent generate = new Intent(this, GenerateActivity.class);
                     startActivity(generate);
                     break;
             }
             return super.onOptionsItemSelected(item);
         }
-
-
     }

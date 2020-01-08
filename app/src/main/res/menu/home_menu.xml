@@ -7,8 +7,8 @@
         app:showAsAction="never"
         />
     <item
-        android:id="@+id/find_credentials"
-        android:title="@string/FindCreds"
+        android:id="@+id/viewSites"
+        android:title="@string/viewSites"
         app:showAsAction="never"
         />
     <item
