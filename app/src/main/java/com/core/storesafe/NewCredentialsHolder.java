@@ -66,7 +66,7 @@ public class NewCredentialsHolder extends AppCompatActivity {
                         databaseReference.child(userid).child("Websites").child(Sitename.getText().toString()).child("Password").setValue(Password.getText().toString());
                         databaseReference.child(userid).child("Websites").child(Sitename.getText().toString()).child("Notes").setValue(Notes.getText().toString());
 
-                        Toast.makeText(NewCredentialsHolder.this, "Your information has been stored successfully.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(NewCredentialsHolder.this, "Successfully Stored Form Data", Toast.LENGTH_SHORT).show();
                         Intent back = new Intent(NewCredentialsHolder.this, HomeActivity.class);
                         startActivity(back);
                     }

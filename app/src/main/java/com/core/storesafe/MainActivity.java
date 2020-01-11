@@ -56,8 +56,6 @@ public class MainActivity extends AppCompatActivity {
                             }
                             else {
                                 startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                                Toast.makeText(MainActivity.this, "Welcome to Storesafe", Toast.LENGTH_SHORT).show();
-
                             }
                         }
                     });
