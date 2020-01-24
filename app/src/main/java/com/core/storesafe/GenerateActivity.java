@@ -112,14 +112,6 @@ public class GenerateActivity extends Activity {
             }
         });
 
-        btnGenerate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent generate = new Intent(GenerateActivity.this, GenerateActivity.class);
-                startActivity(generate);
-            }
-        });
-
         btnSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

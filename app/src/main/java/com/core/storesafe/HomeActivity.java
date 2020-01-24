@@ -57,14 +57,6 @@ public class HomeActivity extends AppCompatActivity {
         CopyPassword = findViewById(R.id.copy_password);
         CopyNotes = findViewById(R.id.copy_notes);
 
-        btnVault.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent vault = new Intent(HomeActivity.this, HomeActivity.class);
-                startActivity(vault);
-            }
-        });
-
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -229,7 +221,7 @@ public class HomeActivity extends AppCompatActivity {
                 break;
             case R.id.signout:
                 FirebaseAuth.getInstance().signOut();
-                Intent intToMain = new Intent(HomeActivity.this, MainActivity.class);
+                Intent intToMain = new Intent(HomeActivity.this, LoginActivity.class);
                 startActivity(intToMain);
                 break;
         }

@@ -40,8 +40,6 @@ public class LoginActivity extends AppCompatActivity {
         btnRegister = findViewById(R.id.register);
         btnLogin = findViewById(R.id.login);
         btnForgotten = findViewById(R.id.Forgotten);
-        RememberE = findViewById(R.id.RememberMail);
-        RememberP = findViewById(R.id.RememberPassword);
 
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override

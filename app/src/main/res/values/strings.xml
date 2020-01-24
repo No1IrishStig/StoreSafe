@@ -70,6 +70,13 @@
     <string name="signature_title">Your signature</string>
     <string name="reply_title">Default reply action</string>
 
+    <string name="AboutDesc">"StoreSafe, is a password storing app made using Android Studio, with API v28.\n\nDeveloped by Luke Mitchell, a student at Perth College UHI studying HNC Computing. This app was made as part of an assessment for mobile app development\n\nThe app features Google's Firebase Authentication and Database services in order to login and register users, as well as store their passwords which are input into the app. \n\nMany updates to come in the near future "</string>
+    <string name="About">"About"</string>
+
+    <string name="Start">"Get Started"</string>
+    <!-- Settings Page -->
+    <string name="Close">"Close App"</string>
+
     <!-- Sync Preferences -->
     <string name="sync_title">Sync email periodically</string>
     <string name="attachment_title">Download incoming attachments</string>
