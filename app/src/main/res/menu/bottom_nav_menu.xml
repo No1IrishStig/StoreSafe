@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_vault"
+        android:title="@string/Vault"
+        android:icon="@drawable/safe"/>
+    <item
+        android:id="@+id/nav_generate"
+        android:title="@string/Generate"
+        android:icon="@drawable/generate"/>
+    <item
+        android:id="@+id/nav_settings"
+        android:title="@string/Settings_name"
+        android:icon="@drawable/cog"/>
+</menu>

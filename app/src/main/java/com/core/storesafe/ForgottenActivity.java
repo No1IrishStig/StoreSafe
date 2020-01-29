@@ -16,8 +16,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ForgottenActivity extends AppCompatActivity {
+
+    // Variable Assignment
     FirebaseAuth mFirebaseAuth;
-    EditText emailId, password;
+    EditText emailId;
     Button btnReset, btnBack;
 
     @Override
@@ -25,14 +27,17 @@ public class ForgottenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgotten);
 
+        // Toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
+        // Object Initialisation
         mFirebaseAuth = FirebaseAuth.getInstance();
         emailId = findViewById(R.id.email);
-        btnReset = findViewById(R.id.Generate);
+        btnReset = findViewById(R.id.reset);
         btnBack = findViewById(R.id.back);
 
+        // Button onClick Listeners
         btnReset.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addPassword_Activity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="411dp"
+        android:layout_height="674dp"
+        android:layout_marginTop="1dp"
+        android:background="#7CADADAD"
+        app:layout_constraintEnd_toEndOf="@+id/app_bar"
+        app:layout_constraintStart_toStartOf="@+id/app_bar"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+
+    <TextView
+        android:id="@+id/headerBar"
+        android:layout_width="349dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="470dp"
+        android:background="@color/Menu_Bar"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="349dp"
+        android:layout_height="385dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/box"
+        app:layout_constraintEnd_toEndOf="@+id/app_bar"
+        app:layout_constraintStart_toStartOf="@+id/app_bar"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/Save"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="138dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="198dp"
+        android:layout_marginBottom="321dp"
+        android:ems="10"
+        android:hint="@string/Username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="321dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="415dp"
+        android:ems="10"
+        android:hint="@string/URL"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="158dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="321dp"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPersonName"
+        android:password="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.085" />
+
+    <EditText
+        android:id="@+id/sitename"
+        android:layout_width="323dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="370dp"
+        android:ems="10"
+        android:hint="@string/Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="316dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="135dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Notes"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="325dp"
+        android:background="@drawable/exit"
+        app:layout_constraintBottom_toBottomOf="@+id/headerBar"
+        app:layout_constraintEnd_toEndOf="@+id/headerBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/headerBar"
+        app:layout_constraintTop_toTopOf="@+id/headerBar"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <TextView
+        android:id="@+id/addPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/AddPass"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/headerBar"
+        app:layout_constraintEnd_toEndOf="@+id/headerBar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/headerBar"
+        app:layout_constraintTop_toTopOf="@+id/headerBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

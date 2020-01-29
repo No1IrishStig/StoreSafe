@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Navbar.GenerateFragment">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="300dp"
+        android:layout_height="63dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundedbutton"
+        android:enabled="true"
+        android:text="@string/Generate"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/Copy"
+        android:layout_width="300dp"
+        android:layout_height="63dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/roundedbutton"
+        android:enabled="true"
+        android:text="@string/Copy"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/generate"
+        app:layout_constraintStart_toStartOf="@+id/generate"
+        app:layout_constraintTop_toBottomOf="@+id/generate" />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="224dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/PWordLength"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/generatedPassword"
+        app:layout_constraintStart_toStartOf="@+id/generatedPassword"
+        app:layout_constraintTop_toBottomOf="@+id/generatedPassword" />
+
+    <EditText
+        android:id="@+id/c"
+        android:layout_width="301dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="524dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="242dp"
+        android:layout_height="17dp"
+        android:max="32"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="@+id/length"
+        app:layout_constraintStart_toStartOf="@+id/length"
+        app:layout_constraintTop_toBottomOf="@+id/length" />
+
+    <TextView
+        android:id="@+id/generatedPassword"
+        android:layout_width="293dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="539dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="249dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="11dp"
+        android:paddingStart="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar">
+
+        <RadioButton
+            android:id="@+id/radioSCharacters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SCharacters"
+            android:textColor="@color/NavBar"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioNumbers"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Numbers"
+            android:textColor="@color/NavBar"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioLetters"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Letters"
+            android:textColor="@color/NavBar"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioAll"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/All"
+            android:textColor="@color/NavBar"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

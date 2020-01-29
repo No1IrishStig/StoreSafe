@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Navbar.HomeFragment"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <TextView
+        android:id="@+id/sitename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/HName"
+        app:layout_constraintEnd_toEndOf="@+id/url"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/url"
+        app:layout_constraintTop_toBottomOf="@+id/url" />
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="166dp"
+        android:text="@string/HURL"
+        app:layout_constraintEnd_toEndOf="@+id/searchedSitename"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/searchedSitename"
+        app:layout_constraintTop_toBottomOf="@+id/searchedSitename" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="2dp"
+        android:text="@string/HPass"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/HUsername"
+        app:layout_constraintEnd_toEndOf="@+id/sitename"
+        app:layout_constraintStart_toStartOf="@+id/sitename"
+        app:layout_constraintTop_toBottomOf="@+id/sitename" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/HNotes"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="178dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="@+id/app_bar"
+        app:layout_constraintStart_toStartOf="@+id/app_bar"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/copy_notes"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="82dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="@+id/notes_Container"
+        app:layout_constraintEnd_toEndOf="@+id/notes_Container"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/notes_Container"
+        app:layout_constraintTop_toTopOf="@+id/notes_Container"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/notes_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/notes"
+        app:layout_constraintEnd_toEndOf="@+id/notes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/notes"
+        app:layout_constraintTop_toTopOf="@+id/notes"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/copy_name"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="82dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="@+id/name_Container"
+        app:layout_constraintEnd_toEndOf="@+id/name_Container"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_Container"
+        app:layout_constraintTop_toTopOf="@+id/name_Container"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:id="@+id/name_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sitename"
+        app:layout_constraintEnd_toEndOf="@+id/sitename"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sitename"
+        app:layout_constraintTop_toTopOf="@+id/sitename"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/copy_username"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="82dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="@+id/username_Container"
+        app:layout_constraintEnd_toEndOf="@+id/username_Container"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/username_Container"
+        app:layout_constraintTop_toTopOf="@+id/username_Container"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:id="@+id/username_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toTopOf="@+id/username"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/copy_password"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="82dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="@+id/password_Container"
+        app:layout_constraintEnd_toEndOf="@+id/password_Container"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password_Container"
+        app:layout_constraintTop_toTopOf="@+id/password_Container"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/password_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="@+id/password"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/copy_url"
+        android:layout_width="79dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="81dp"
+        android:text="@string/Copy"
+        app:layout_constraintBottom_toBottomOf="@+id/url_Container"
+        app:layout_constraintEnd_toEndOf="@+id/url_Container"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/url_Container"
+        app:layout_constraintTop_toTopOf="@+id/url_Container"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <TextView
+        android:id="@+id/url_Container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
+        app:layout_constraintBottom_toBottomOf="@+id/url"
+        app:layout_constraintEnd_toEndOf="@+id/url"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/url"
+        app:layout_constraintTop_toTopOf="@+id/url"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/searchedSitename"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="342dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="341dp"
+        android:ems="10"
+        android:hint="Site to find"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="258dp"
+        android:text="@android:string/search_go"
+        app:layout_constraintBottom_toBottomOf="@+id/searchedSitename"
+        app:layout_constraintStart_toStartOf="@+id/searchedSitename"
+        app:layout_constraintTop_toTopOf="@+id/searchedSitename" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

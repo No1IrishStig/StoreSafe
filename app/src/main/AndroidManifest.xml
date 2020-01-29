@@ -10,19 +10,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".NewCredentialsHolder" />
-        <activity android:name=".GenerateActivity" />
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".addPassword_Activity" />
         <activity
             android:name=".ForgottenActivity"
             android:label="Password Reset" />
         <activity
             android:name=".LoginActivity"
             android:label="Login" />
-        <activity
-            android:name=".HomeActivity"
-            android:label="Home" />
         <activity
             android:name=".MainActivity"
             android:label="StoreSafe">
@@ -33,4 +29,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

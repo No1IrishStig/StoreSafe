@@ -4,16 +4,13 @@
     <item
         android:id="@+id/add_account"
         android:title="@string/AddAccount"
-        app:showAsAction="never"
-        />
+        app:showAsAction="never"/>
     <item
         android:id="@+id/viewSites"
         android:title="@string/viewSites"
-        app:showAsAction="never"
-        />
+        app:showAsAction="never" />
     <item
         android:id="@+id/signout"
         android:title="@string/Signout"
-        app:showAsAction="never"
-        />
+        app:showAsAction="never" />
 </menu>

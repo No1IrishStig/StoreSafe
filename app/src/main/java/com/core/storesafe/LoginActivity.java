@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import com.core.storesafe.Navbar.HomeFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -19,9 +20,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
+
+    // Variable Assignment
     EditText emailId, password;
     Button btnRegister, btnLogin, btnForgotten;
-    Switch RememberE, RememberP;
     FirebaseAuth mFirebaseAuth;
 
     private FirebaseAuth.AuthStateListener mAuthStateListener;
@@ -31,9 +33,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        // Toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
+        // Object Initialisation
         mFirebaseAuth = FirebaseAuth.getInstance();
         emailId = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -53,6 +57,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         };
 
+        // Button onClick listeners
         btnLogin.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -78,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intRegister = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intRegister = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intRegister);
             }
         });

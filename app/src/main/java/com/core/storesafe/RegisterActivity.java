@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.core.storesafe.Navbar.HomeFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -27,9 +28,11 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        // Toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
+        // Object Initialisation
         mFirebaseAuth = FirebaseAuth.getInstance();
         emailId = findViewById(R.id.email);
         password = findViewById(R.id.password);
@@ -37,6 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.login);
         reenter = findViewById(R.id.reentry);
 
+        // Button onClick listeners
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +59,7 @@ public class RegisterActivity extends AppCompatActivity {
                             if (!task.isSuccessful()) {
                                 Toast.makeText(RegisterActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                             } else {
-                                startActivity(new Intent(RegisterActivity.this, HomeActivity.class));
+                                startActivity(new Intent(RegisterActivity.this, HomeFragment.class));
                             }
                         }
                     });

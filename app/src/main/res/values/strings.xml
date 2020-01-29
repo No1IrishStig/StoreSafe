@@ -70,7 +70,7 @@
     <string name="signature_title">Your signature</string>
     <string name="reply_title">Default reply action</string>
 
-    <string name="AboutDesc">"StoreSafe, is a password storing app made using Android Studio, with API v28.\n\nDeveloped by Luke Mitchell, a student at Perth College UHI studying HNC Computing. This app was made as part of an assessment for mobile app development\n\nThe app features Google's Firebase Authentication and Database services in order to login and register users, as well as store their passwords which are input into the app. \n\nMany updates to come in the near future "</string>
+    <string name="AboutDesc">"StoreSafe, is a password storing app made using Android Studio, with API v28.\n\nDeveloped by Luke Mitchell, a student at Perth College UHI studying HNC Computing. This app was made as part of an assessment for mobile app development\n\nThe app features Google's Firebase Authentication and Database services in order to login and register users, as well as store their passwords which are input into the app. Passwords are Encrypted using Base64 and AES256 encryption\n\nMany updates to come in the near future."</string>
     <string name="About">"About"</string>
 
     <string name="Start">"Get Started"</string>
@@ -83,4 +83,8 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
