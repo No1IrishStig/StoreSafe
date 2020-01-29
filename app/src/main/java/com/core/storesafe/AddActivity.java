@@ -2,20 +2,15 @@ package com.core.storesafe;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Message;
 import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.core.storesafe.Navbar.HomeFragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -26,7 +21,7 @@ import java.security.MessageDigest;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-public class addPassword_Activity extends AppCompatActivity {
+public class AddActivity extends AppCompatActivity {
 
     // Variable Assignment
     private Button mSendData, btnCancel, btnExit;
@@ -59,7 +54,7 @@ public class addPassword_Activity extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (Sitename.getText().toString().isEmpty() || Username.getText().toString().isEmpty() || Password.getText().toString().isEmpty()) {
-                    Toast.makeText(addPassword_Activity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
                 } else {
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
                     DatabaseReference databaseReference = database.getReference();
@@ -78,8 +73,8 @@ public class addPassword_Activity extends AppCompatActivity {
                     databaseReference.child(userid).child("Websites").child(Sitename.getText().toString()).child("Password").setValue(OutputText);
                     databaseReference.child(userid).child("Websites").child(Sitename.getText().toString()).child("Notes").setValue(Notes.getText().toString());
 
-                    Toast.makeText(addPassword_Activity.this, "Storing Successful", Toast.LENGTH_SHORT).show();
-                    Intent back = new Intent(addPassword_Activity.this, HomeActivity.class);
+                    Toast.makeText(AddActivity.this, "Storing Successful", Toast.LENGTH_SHORT).show();
+                    Intent back = new Intent(AddActivity.this, HomeActivity.class);
                     startActivity(back);
                 }
             }

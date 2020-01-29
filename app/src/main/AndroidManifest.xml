@@ -12,7 +12,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".addPassword_Activity" />
+        <activity android:name=".AddActivity" />
         <activity
             android:name=".ForgottenActivity"
             android:label="Password Reset" />

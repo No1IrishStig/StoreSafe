@@ -25,7 +25,7 @@ import androidx.fragment.app.Fragment;
 import com.core.storesafe.HomeActivity;
 import com.core.storesafe.LoginActivity;
 import com.core.storesafe.R;
-import com.core.storesafe.addPassword_Activity;
+import com.core.storesafe.AddActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -101,12 +101,12 @@ public class HomeFragment extends Fragment {
 
                         encPass = dataSnapshot.child("Password").getValue(String.class);
 
+
                         try {
                             decPass = decrypt(encPass, userid);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-
                         url_container.setText(dataSnapshot.child("URL").getValue(String.class));
                         name_container.setText(dataSnapshot.child("Site Name").getValue(String.class));
                         username_container.setText(dataSnapshot.child("Username").getValue(String.class));
@@ -218,7 +218,7 @@ public class HomeFragment extends Fragment {
         switch(item.getItemId())
         {
             case R.id.add_account:
-                Intent vault = new Intent(HomeFragment.this.getActivity(), addPassword_Activity.class);
+                Intent vault = new Intent(HomeFragment.this.getActivity(), AddActivity.class);
                 startActivity(vault);
                 break;
             case R.id.viewSites:
